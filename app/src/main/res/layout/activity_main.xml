@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter City"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityEditText"
+        android:text="Update Weather"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/daylightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateButton"
+        android:layout_marginTop="20dp"
+        android:text="Daylight: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/daylightTextView"
+        android:layout_marginTop="20dp"
+        android:text="Temperature: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/windSpeedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperatureTextView"
+        android:layout_marginTop="20dp"
+        android:text="Wind Speed: "
+        android:textSize="18sp" />
+
+</RelativeLayout>
